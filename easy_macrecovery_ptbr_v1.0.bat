@@ -48,7 +48,7 @@ py macrecovery.py -b %id% -m %m_value% download
 echo.
 echo.
 echo copie a pasta "com.apple.recovery.boot" para a raiz do seu pendrive
-explorer "%found_dir%\Utilities\macrecovery"
+start explorer "%found_dir%\Utilities\macrecovery"
 pause
 goto :eof
 
