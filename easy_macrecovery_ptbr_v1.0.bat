@@ -8,6 +8,7 @@ set ano=2024
 set versao=Easy macrecovery ver: %build% - %date%
 set linha=-------------------------------------------------------------------------------
 
+
 rename "%~f0" "easy_macrecovery_ptbr_v%build%.bat"
 title  %versao% -- %ano% -- By: llbranco
 
@@ -44,6 +45,11 @@ set "id=%1"
 set "m_value=%2"
 echo Executando comando para ID: %id% com -m: %m_value%
 py macrecovery.py -b %id% -m %m_value% download
+echo.
+echo.
+echo copie a pasta "com.apple.recovery.boot" para a raiz do seu pendrive
+explorer "%found_dir%\Utilities\macrecovery"
+pause
 goto :eof
 
 :: Menu principal
