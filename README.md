@@ -3,6 +3,9 @@
 This project aims to simplify the macOS recovery process using the `easy_macrecovery.bat` script. The script allows the user to select different macOS versions and download the corresponding firmware using the `macrecovery.py` utility.
 ---
 
+![image](https://github.com/user-attachments/assets/4128fa12-a185-4ccf-9a43-b47d65e160a6)
+
+
 ## How to Use
 
 ### Requirements:
