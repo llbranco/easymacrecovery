@@ -8,10 +8,7 @@ set ano=2024
 set versao=Easy macrecovery ver: %build% - %date%
 set linha=-------------------------------------------------------------------------------
 
-
-@echo on
 rename "%~f0" "easy_macrecovery_ptbr_v%build%.bat"
-pause
 title  %versao% -- %ano% -- By: llbranco
 
 cd /d "%~dp0"
