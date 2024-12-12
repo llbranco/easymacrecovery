@@ -21,6 +21,17 @@ This project aims to simplify the macOS recovery process using the `easy_macreco
 4. run the `easy_macrecovery.bat` script.
 5. The script will automatically detect the OpenCore version and ask you to choose the macOS version for recovery.
 6. The script will then execute the command to download the corresponding recovery version.
+7. prepare your USB drive using Rufus
+   
+![image](https://github.com/user-attachments/assets/9dee8949-df28-4bdb-bdd7-43ca6208305c)
+
+9. copy the folder OpenCore-x.x.x-RELEASE\Utilities\macrecovery\"com.apple.recovery.boot" to the root or your USB drive
+10. copy the folder OpenCore-x.x.x-RELEASE\x64\EFI to the root of your USB drive
+11. your USB drive should look like this:
+
+![image](https://github.com/user-attachments/assets/42d66574-594e-4320-9db7-e4980a818f4a)
+
+
 
 ### How it works:
 The script automatically detects the corresponding OpenCore folder, allows you to select the desired macOS version, and runs the `macrecovery.py` command to download the system recovery.
