@@ -47,7 +47,7 @@ py macrecovery.py -b %id% -m %m_value% download
 echo.
 echo.
 echo copy the folder "com.apple.recovery.boot" to the root of your USB Drive
-explorer "%found_dir%\Utilities\macrecovery"
+start explorer "%found_dir%\Utilities\macrecovery"
 pause
 goto :eof
 
