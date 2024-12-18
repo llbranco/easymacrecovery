@@ -48,6 +48,12 @@ py macrecovery.py -b %id% -m %m_value% download
 echo.
 echo.
 echo copie a pasta "com.apple.recovery.boot" para a raiz do seu pendrive
+echo.
+echo encontre o erro "o servidor de recuperacao nao pode ser contatado"
+echo copie a url de erro do instalador no mac substituindo HTTPS por HTTP
+echo e execute o comando no terminal do mac:
+echo nvram IASUCatalogURL="http://swscan.apple.com/content/catal..."
+echo.
 start explorer "%found_dir%\Utilities\macrecovery"
 pause
 goto :eof
