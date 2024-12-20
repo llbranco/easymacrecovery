@@ -39,3 +39,8 @@ The script automatically detects the corresponding OpenCore folder, allows you t
 ---
 
 Made with love by @llbranco #llbranco
+
+
+### random stuff
+Keyboard customizer for macOS.
+https://karabiner-elements.pqrs.org/
