@@ -12,7 +12,6 @@ This project aims to simplify the macOS recovery process using the `easy_macreco
 - Python 3.x installed
 - [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases)
 - `macrecovery.py` available in the `Utilities\macrecovery` directory of the OpenCore folder
-- Access to the folder containing the `OpenCore-*-RELEASE` directory structure
 
 ### Steps:
 1. Download [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases)
@@ -31,7 +30,7 @@ This project aims to simplify the macOS recovery process using the `easy_macreco
 
 ![image](https://github.com/user-attachments/assets/42d66574-594e-4320-9db7-e4980a818f4a)
 
-
+For better experience use [OpCore-Simplify](https://github.com/lzhoang2801/OpCore-Simplify) to create your EFI folder
 
 ### How it works:
 The script automatically detects the corresponding OpenCore folder, allows you to select the desired macOS version, and runs the `macrecovery.py` command to download the system recovery.
