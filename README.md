@@ -12,6 +12,7 @@ This project aims to simplify the macOS recovery process using the `easy_macreco
 - Python 3.x installed
 - [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases)
 - `macrecovery.py` available in the `Utilities\macrecovery` directory of the OpenCore folder
+- (Optional) [OpCore-Simplify](https://github.com/lzhoang2801/OpCore-Simplify)
 
 ### Steps:
 1. Download [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases)
