@@ -2,22 +2,43 @@
 setlocal enabledelayedexpansion
 
 color 71
-set build=1.0
-set date=12/dec/24
-set year=2024
+set build=1.1
+set date=20/mar/25
+set year=2025
 set version=Easy macrecovery ver: %build% - %date%
 set line=-------------------------------------------------------------------------------
 
-rename "%~f0" "easy_macrecovery_en_v%build%.bat"
 title  %version% -- %year% -- By: llbranco
 
 cd /d "%~dp0"
 
-:: Iterate over the folders matching the OpenCore-*-RELEASE pattern
-for /d %%D in (OpenCore-*-RELEASE) do (
-    set "found_dir=%~dp0%%D"
+:: Define the name of the file we are looking for
+set "py=macrecovery.py"
+
+:: Check if the file is in the same folder as the batch file
+if exist "%~dp0%py%" (
+    set "py=%~dp0%py%"
+    goto start
 )
 
+:: Check if the file is in the macrecovery folder
+if exist "%~dp0macrecovery\%py%" (
+    set "py=%~dp0macrecovery\%py%"
+    goto start
+)
+
+:: Check if the file is in the Utilities\macrecovery folder
+if exist "%~dp0Utilities\macrecovery\%py%" (
+    set "py=%~dp0Utilities\macrecovery\%py%"
+    goto start
+)
+
+:: If the file was not found, display the message
+echo Make sure the script is inside the OpenCore folder.
+pause
+exit /b
+
+:start
 :: Define the versions and associated -m values
 set "Lion_1=00000000000F25Y00"
 set "Lion_2=00000000000F0HM00"
