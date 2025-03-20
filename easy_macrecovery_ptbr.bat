@@ -2,23 +2,47 @@
 setlocal enabledelayedexpansion
 
 color 71
-set build=1.0
-set date=12/dez/24
-set ano=2024
+set build=1.1
+set date=20/mar/25
+set ano=2025
 set versao=Easy macrecovery ver: %build% - %date%
 set linha=-------------------------------------------------------------------------------
 
 
-rename "%~f0" "easy_macrecovery_ptbr_v%build%.bat"
+::rename "%~f0" "easy_macrecovery_ptbr_v%build%.bat"
+
 title  %versao% -- %ano% -- By: llbranco
 
 cd /d "%~dp0"
 
-:: Iterar sobre as pastas que correspondem ao padrão OpenCore-*-RELEASE
-for /d %%D in (OpenCore-*-RELEASE) do (
-    set "found_dir=%~dp0%%D"
+:: Define o nome do arquivo que estamos procurando
+set "py=macrecovery.py"
+
+:: Verifica se o arquivo está na mesma pasta que o batch
+if exist "%~dp0%py%" (
+    set "py=%~dp0%py%"
+    goto start
 )
 
+:: Verifica se o arquivo está na pasta macrecovery
+if exist "%~dp0macrecovery\%py%" (
+    set "py=%~dp0macrecovery\%py%"
+    goto start
+)
+
+:: Verifica se o arquivo está na pasta Utilities\macrecovery
+if exist "%~dp0Utilities\macrecovery\%py%" (
+    set "py=%~dp0Utilities\macrecovery\%py%"
+    goto start
+)
+
+:: Se o arquivo não foi encontrado, exibe a mensagem
+echo Certifique-se de que o script esteja dentro da pasta do OpenCore.
+pause
+
+exit/b
+
+:start
 :: Definir as versões e os valores de -m associados
 set "Lion_1=00000000000F25Y00"
 set "Lion_2=00000000000F0HM00"
