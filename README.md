@@ -37,6 +37,10 @@ For better experience use [OpCore-Simplify](https://github.com/lzhoang2801/OpCor
 The script automatically detects the corresponding OpenCore folder, allows you to select the desired macOS version, and runs the `macrecovery.py` command to download the system recovery.
 
 ---
+objetivos do projeto (sem tempo estimado e sem ordem especifica):
+- suporte a Shell Script Linux/Mac
+- suporte a discos multiboot (multiplas versões de mac no mesmo pendrive)
+- suporte a criação de pendrives com instalação de mac/linux/windows (possivelmente com ventoy ou E2B)
 
 Made with love by @llbranco #llbranco
 
