@@ -25,6 +25,7 @@ This project aims to simplify the macOS recovery process using the `easy_macreco
 5. The script will automatically detect the OpenCore version and ask you to choose the macOS version for recovery.
 6. The script will then execute the command to download the corresponding recovery version.
 7. prepare your USB drive using Rufus
+8. (some versions need additional steps please see https://www.youtube.com/watch?v=SSP2z_Vg_ew for more info)
    
 ![image](https://github.com/user-attachments/assets/9dee8949-df28-4bdb-bdd7-43ca6208305c)
 
